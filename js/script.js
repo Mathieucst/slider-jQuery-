@@ -5,14 +5,15 @@ var carrousel = {
     elemCurrent : null,
     elem : null,
 
-    init :function (elem) {
-this.nbSlide = elem.find("slide").length;
+    init :function(elem) {
+        this.nbSlide = elem.find("slide").length;
 
 
 // crée la page
-        elem.append('<div class="navigation"></div>');
-            for(var i=1;i<=this.nbSlide;i++){
-            elem.find(".navigatior").append("<span>"+i+"</span>");
+
+        elem.append("<div class='navigation'></div>");
+        for(var i=1;i<=this.nbSlide;i++){
+            elem.find(".navigation").append("<span>"+i+"</span>");
         }
 
         elem.find(".navigation span").click(function(){ carrousel.gotoSlide($(this).text());
@@ -26,14 +27,16 @@ this.nbSlide = elem.find("slide").length;
         elem.find(".slide:first").show();
         elemCurrent = elem.find(".slide:first");
     },
-    gotoSlide : function (num) {
-       this.elemCurrent.fadeOut();
-       this.elem.find("#slide"+num).fadeIn();
-this.nbCurrent = num;
-this.elemCurrent = this.elem.find("#slide"+num);
+
+    gotoSlide : function(num){
+        this.elemCurrent.fadeOut();
+        this.elem.find("#slide"+num).fadeIn();
+        this.nbCurrent = num;
+        this.elemCurrent = this.elem.find("#slide"+num);
     }
 
 }
+
 $(function () {
-    carrousel.init($("#carousel"));
+    carrousel.init($("#carrousel"));
 });
