@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9b747e27-f47a-4ec9-8cd7-b52f913c46c4" name="mathieuc" url="http://mathieuc.marmier.codeur.online/">
+        <fileTransfer host="mathieuc.marmier.codeur.online" port="21" rootFolder="/home/mathieuc">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
