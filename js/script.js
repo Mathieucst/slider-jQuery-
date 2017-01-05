@@ -6,29 +6,28 @@ var carrousel = {
     elem : null,
 
     init :function(elem) {
-        this.nbSlide = elem.find("slide").length;
+        this.nbSlide=elem.find(".slide").length;
 
 
 // crée la page
-        
+
         elem.append("<div class='navigation'></div>");
         for(var i=1;i<=this.nbSlide;i++){
             elem.find(".navigation").append("<span>"+i+"</span>");
         }
 
-        elem.find(".navigation span").click(function(){ carrousel.gotoSlide($(this).text());
-
-        })
+        elem.find(".navigation span").click(function(){ carrousel.gotoSlide($(this).text());})
 
         //Initialisation du carrousel
 
-        this.elem = elem;
+        this.elem=elem;
         elem.find(".slide").hide();
         elem.find(".slide:first").show();
-        elemCurrent = elem.find(".slide:first");
+        this.elemCurrent = elem.find(".slide:first");
     },
 
     gotoSlide : function(num){
+        if(num==this.nbCurrent){ return false; }
         this.elemCurrent.fadeOut();
         this.elem.find("#slide"+num).fadeIn();
         this.nbCurrent = num;
