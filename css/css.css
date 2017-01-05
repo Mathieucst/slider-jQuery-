@@ -29,7 +29,7 @@
 
 }
 
-.navigation span:hover{
+.navigation span:hover,.navigation span.active{
     background:#FFF;
     color: #000;
 }
