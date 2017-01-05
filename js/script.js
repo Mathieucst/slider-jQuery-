@@ -10,7 +10,7 @@ var carrousel = {
 
 
 // crée la page
-
+        
         elem.append("<div class='navigation'></div>");
         for(var i=1;i<=this.nbSlide;i++){
             elem.find(".navigation").append("<span>"+i+"</span>");
