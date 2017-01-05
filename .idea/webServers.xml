@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="9b747e27-f47a-4ec9-8cd7-b52f913c46c4" name="mathieuc" url="http://mathieuc.marmier.codeur.online/">
-        <fileTransfer host="mathieuc.marmier.codeur.online" port="21" rootFolder="/home/mathieuc">
+        <fileTransfer host="mathieuc.marmier.codeur.online" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
