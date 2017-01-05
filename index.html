@@ -7,22 +7,39 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
     <link href="css/boot.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/css.css">
-    <script src="js/jquery.mi.js"></script>
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.mi.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
 </head>
 <body>
-<div class="cache">
-    <div class="contenu-slider" id="tourne" style="left: 0px;">
-        <img src="img/marche.jpg" class="img">
-        <img src="img/balade.jpg" class="img">
-        <img src="img/vom.jpg" class="img">
+<div id="conteneur">
+    <div id="carrousel">
+        <div id="slide1" class="slide">
+            <div class="visu">
+                <img src="img/marche.jpg">
+            </div>
+        </div>
+
+        <div id="slide2" class="slide">
+            <div class="visu">
+                <img src="img/balade.jpg">
+            </div>
+        </div>
+
+        <div id="slide3" class="slide">
+            <div class="visu">
+                <img src="img/vom.jpg">
+            </div>
+        </div>
+        <!--<div class="nav">-->
+        <!--<span>1</span>-->
+        <!--<span>2</span>-->
+        <!--<span>3</span>-->
+    <!--</div>-->
     </div>
 </div>
-<div class="button-box">
-    <button type="button" id="gauche" class="gauche" onclick="mo">Gauche</button>
-    <button type="button" id="droite" class="droite" onclick="mouvright()">Droite</button>
-</div>
+
+
 
 
 </body>
