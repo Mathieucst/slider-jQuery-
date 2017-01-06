@@ -30,6 +30,7 @@ var carrousel = {
         if(num==this.nbCurrent){ return false; }
         this.elemCurrent.fadeOut();
         this.elem.find("#slide"+num).fadeIn();
+        this.elem.find('.navigastion.span').removeClass("active");
         this.elem.find('.navigation span:eq("+(num-1+)').addClass("active")
         this.nbCurrent = num;
         this.elemCurrent = this.elem.find("#slide"+num);
